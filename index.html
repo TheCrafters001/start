@@ -1,342 +1,688 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta name="generator" content="Hugo 0.88.1" />
     <title>TheCrafters001 Start Page</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/slate.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="TheCrafters001">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="TheCrafters001">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5/dist/css/bootstrap-nightshade.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link href="/assets/css/cookie-consent.css" rel="stylesheet" />
+
+    <!-- Dark Mode CSS -->
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="stylesheet" href="/assets/css/mastodon.widget.css" />
+    <script type="text/javascript" src="/assets/js/mastodon.widget.js"></script>
+    <script>
+        $(document).ready(function() {
+        		// jQUERY is required!
+        			var mapi = new MastodonApi({
+        				target_selector  : '#myTimeline'
+        				,instance_uri    : 'https://mstdn.social'
+        				,access_token    : 'lYiplkZFhsx_LVTeJwzd9sGjzyuXmzhk5SNhyklfzbs'
+        				,account_id      : '107680401465424139'
+        				// optional parameters
+        				// ===================
+        				// - status max
+        				//,toots_limit     : 5
+        				// - if you are using font-awesome:
+        				//,pic_icon        : '<i class="fa fa-picture-o"></i>'
+        				// or a picture
+        				,pic_icon        : '<img src="/img/avatar.png" />'
+        			});
+        		});
+    </script>
+    <link href="/assets/css/cookie-consent.css" rel="stylesheet" />
+    <!-- Twitter and OG data -->
+    <meta property="og:title" content="TheCrafters001">
+    <meta property="og:site_name" content="TheCrafters001">
+    <meta property="og:url" content="http://thecrafters001.github.io/?ref=og-url&direct=true">
+    <meta property="og:description" content="TheCrafters001 - Redefining Free - Free Games - Free Software - All Open-Source!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheCrafters001">
+    <meta name="twitter:description" content="TheCrafters001 - Redefining Free - Free Games - Free Software - All Open-Source!">
+    <meta name="twitter:title" content="TheCrafters001">
+    <meta name="twitter:image" content="/assets/og-image.png">
+    <!-- End Twitter and OG data -->
 </head>
 
 <body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" width="40" src="/assets/img/Logo_Small_White.png" />
+                    <span class="fs-4">TheCrafters001</span>
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="/software/index.html" class="nav-link px-2 text-white">Software</a></li>
+                    <li><a href="/games/index.html" class="nav-link px-2 text-white">Games</a></li>
+                    <li><a href="/blog/" class="nav-link px-2 text-white">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-<div class="nav-panel">
-    <nav>
-        <ul>
-            <li class="tag"><a data-tooltip="all" href="#"><i class="icon fa fa-th" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Favorites" href="#favorite"><i class="icon fa fa-star" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Search Engines" href="#search"><i class="icon fa fa-search" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Gaming Sites" href="#games"><i class="icon fa fa-gamepad" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Video Sites" href="#videos"><i class="icon fa fa-video-camera" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Coding Sites" href="#coding"><i class="icon fa fa-code" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Google Sites" href="#google"><i class="icon fa fa-google" aria-hidden="true"></i></a></li>
-            <li class="tag"><a data-tooltip="Social Media" href="#social"><i class="icon fa fa-users" aria-hidden="true"></i></a></li>
+    <div class="container">
+        <h1>Search</h1>
+        <form action="https://duckduckgo.com" method="GET">
+            <div class="form-floating">
+                <input type="text" name="q" class="form-control" id="q" placeholder="Search...">
+                <label for="floatingInput">Search</label>
+            </div>
+        </form>
+        <br>
+        <hr>
+    </div>
 
-        </ul>
-    </nav>
-</div>
+    <div class="container">
+        <h2>Quick Links</h2>
+        <hr>
+        <H3>Search Engines</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">DuckDuckGo</h5>
+                        <h6>URL: duck.com</h6>
+                        <p class="card-text">
+                            <a href="https://duck.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Search Engine</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">OpenSearch</h5>
+                        <h6>URL: thecrafters001.github.io/OpenSearch</h6>
+                        <p class="card-text">
+                            <a href="https://thecrafters001.github.io/OpenSearch" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Search Engine</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <H3>Coding</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">GitHub</h5>
+                        <h6>URL: github.com</h6>
+                        <p class="card-text">
+                            <a href="https://github.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Visual Studio</h5>
+                        <h6>URL: visualstudio.com</h6>
+                        <p class="card-text">
+                            <a href="https://visualstudio.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Visual Studio Code</h5>
+                        <h6>URL: code.visualstudio.com</h6>
+                        <!-- Hey, you found me! -->
+                        <!-- This site was written in VSCode! -->
+                        <!-- Though, I should work on my coding more... -->
+                        <!-- This website coding kinda sucks, -->
+                        <!-- but I guess it works for now. -->
+                        <p class="card-text">
+                            <a href="https://visualstudio.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Of course, right as I am developing this thing, and made that comment above, I forgot to add this tag, and broke everything. lol. -->
+            <!-- I both like and dislike HTML for this reason. I wish there was some free, open-source drag and drop HTML editor out there. -->
+            <!-- If you find this, and know of one, please let me know. -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Inno Setup</h5>
+                        <h6>URL: jrsoftware.org/isinfo.php</h6>
+                        <p class="card-text">
+                            <a href="https://jrsoftware.org/isinfo.php" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">NameCheap</h5>
+                        <h6>URL: namecheap.com</h6>
+                        <p class="card-text">
+                            <a href="https://namecheap.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CloudFlare</h5>
+                        <h6>URL: cloudflare.com</h6>
+                        <p class="card-text">
+                            <a href="https://cloudflare.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CloudFlare</h5>
+                        <h6>URL: cloudflare.com</h6>
+                        <p class="card-text">
+                            <a href="https://cloudflare.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Code</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Apparently there were 3 </div> tags here at one point. -->
+		<!-- That cause this to end the <div class="container">, so oops. -->
+        <hr>
+        <H3>Google Services</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">G-Mail</h5>
+                        <h6>URL: gmail.com</h6>
+                        <p class="card-text">
+                            <a href="https://gmail.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Google</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">YouTube</h5>
+                        <h6>URL: youtube.com</h6>
+                        <p class="card-text">
+                            <a href="https://youtube.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Google</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <H3>Gaming</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Game Jolt</h5>
+                        <h6>URL: gamejolt.com</h6>
+                        <p class="card-text">
+                            <a href="https://gamejolt.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Itch</h5>
+                        <h6>URL: itch.io</h6>
+                        <p class="card-text">
+                            <a href="https://itch.io" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TheCrafters001</h5>
+                        <h6>URL: thecrafters001.github.io</h6>
+                        <p class="card-text">
+                            <a href="https://thecrafters001.github.io" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Luka S.J.</h5>
+                        <h6>URL: luka-sj.com</h6>
+                        <p class="card-text">
+                            <a href="https://luka-sj.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">IndieDB</h5>
+                        <h6>URL: indiedb.com</h6>
+                        <p class="card-text">
+                            <a href="https://indiedb.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pok&eacute;mon</h5>
+                        <h6>URL: pokemon.com</h6>
+                        <p class="card-text">
+                            <a href="https://pokemon.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nexus Mods</h5>
+                        <h6>URL: nexusmods.com</h6>
+                        <p class="card-text">
+                            <a href="https://nexusmods.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Steam</h5>
+                        <h6>URL: store.steampowered.com</h6>
+                        <p class="card-text">
+                            <a href="https://store.steampowered.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Steam Status</h5>
+                        <h6>URL: steamstat.us</h6>
+                        <p class="card-text">
+                            <a href="https://steamstat.us" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SteamDB</h5>
+                        <h6>URL: steamdb.info</h6>
+                        <p class="card-text">
+                            <a href="https://steamdb.info" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Gaming</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <H3>Social Media</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Twitter</h5>
+                        <h6>URL: tweetdeck.twitter.com</h6>
+                        <p class="card-text">
+                            <a href="https://tweetdeck.twitter.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Social</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mastodon (MSTDN)</h5>
+                        <h6>URL: mstdn.social</h6>
+                        <p class="card-text">
+                            <a href="https://mstdn.social/" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Social</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <H3>Forums</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Relic Castle</h5>
+                        <h6>URL: reliccastle.com</h6>
+                        <p class="card-text">
+                            <a href="https://reliccastle.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pok&eacute;Community</h5>
+                        <h6>URL: pokecommunity.com</h6>
+                        <p class="card-text">
+                            <a href="https://pokecommunity.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">RPG Maker Forums</h5>
+                        <h6>URL: forums.rpgmakerweb.com</h6>
+                        <p class="card-text">
+                            <a href="https://forums.rpgmakerweb.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Stack Overflow</h5>
+                        <h6>URL: stackoverflow.com</h6>
+                        <p class="card-text">
+                            <a href="https://stackoverflow.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Code Project</h5>
+                        <h6>URL: codeproject.com</h6>
+                        <p class="card-text">
+                            <a href="https://codeproject.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nexus Mods Forums</h5>
+                        <h6>URL: forums.nexusmods.com</h6>
+                        <p class="card-text">
+                            <a href="https://forums.nexusmods.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Forums</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <H3>Streaming Services</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Twitch</h5>
+                        <h6>URL: twitch.tv</h6>
+                        <p class="card-text">
+                            <a href="https://twitch.tv" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Streaming</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<hr>
+        <H3>Music</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tanner Helland</h5>
+                        <h6>URL: tannerhelland.com</h6>
+                        <p class="card-text">
+                            <a href="https://tannerhelland.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Music</small>
+                    </div>
+                </div>
+            </div>
+			<div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wingless Seraph</h5>
+                        <h6>URL: wingless-seraph.net/en</h6>
+                        <p class="card-text">
+                            <a href="https://wingless-seraph.net/en" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Music</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<hr>
+        <H3>Art</H3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">DeviantArt</h5>
+                        <h6>URL: deviantart.com</h6>
+                        <p class="card-text">
+                            <a href="https://deviantart.com" target="_blank" class="btn btn-primary">Visit Website</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Service Type: Art</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Some of these one to two link things are sad. -->
+        </div>
+    </div>
 
+	<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡈⢠⣘⣮⣿⣿⣮⢍⠊⢄⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⠄⢪⣭⣾⣿⣿⣿⣿⣿⣿⣿⣿⣯⣞⢪⡀⢈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⡈⢀⣚⣮⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⢭⠈⡄⡀⡄⡄⢄⠈⠀⠀⠀
+⠀⠀⠀⠀⢀⠄⢨⣭⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣞⢭⢄⠀
+⠀⢀⢀⣚⣭⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣞⢽⣿⠏⠎
+⠀⣰⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠃
+⣀⣓⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠏⠀
+⣗⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⢶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⣒⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⣰⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⣰⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⣰⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⣰⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠏⠀
+⠀⠐⠐⢵⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢷⡛⠁⠁⠀
+⠀⠀⠀⠀⠐⠂⡑⡻⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢷⠕⠠⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠐⠡⠐⢵⡷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡷⡛⠁⠒⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠂⡕⡻⣷⣿⣿⣿⣿⣿⣿⣿⣿⡿⢷⡕⠠⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠡⡐⢱⡷⣿⣿⡷⠛⠅⠒⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+		(This was a failed attempt at trying to make my logo into ASCII art.)
+		(I used this converter: https://image2ascii.com/)
+	-->
 
-<div class="container"><div class="tile-container">
-<a class="tile tile-link" href="https://duck.com" data-groups='favorite,search' target="_blank">
-    <div class="tile-box"
-        data-title='DuckDuckGo'
-        data-url='https://duck.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        DuckDuckGo</div>
-    <div class="tile-title">DuckDuckGo</div>
-</a>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2017
+                <script>
+                    new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());
+                </script>, TheCrafters001.</p>
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img class="bi me-2" width="200" src="/assets/img/Logo_Black.png" />
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="/pages/policies/privacy.html" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                <li class="nav-item"><a href="/pages/policies/cookie.html" class="nav-link px-2 text-muted">Cookie Policy</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Below is script links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="/assets/js/cookie-consent.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-dark-5/dist/js/darkmode.min.js"></script>
 
-<a class="tile tile-link" href="https://gamejolt.com" data-groups='favorite,games,social' target="_blank">
-    <div class="tile-box"
-        data-title='Game Jolt'
-        data-url='https://gamejolt.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Game Jolt</div>
-    <div class="tile-title">Game Jolt</div>
-</a>
-
-<a class="tile tile-link" href="https://youtube.com" data-groups='favorite,games,videos,google,social' target="_blank">
-    <div class="tile-box"
-        data-title='YouTube'
-        data-url='https://youtube.com'
-        data-bg-color='#ff0000'data-txt-color='#ffffff'data-img='/start/websites/youtube.png'style='background-color:#ff0000; color:#ffffff'>
-        <img class="logo" src="/start/websites/youtube.png"></img></div>
-    <div class="tile-title">YouTube</div>
-</a>
-
-<a class="tile tile-link" href="https://github.com" data-groups='favorite,coding' target="_blank">
-    <div class="tile-box"
-        data-title='GitHub'
-        data-url='https://github.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/GitHub_Logo_White.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/GitHub_Logo_White.png"></img></div>
-    <div class="tile-title">GitHub</div>
-</a>
-
-<a class="tile tile-link" href="https://gmail.com" data-groups='favorite,google' target="_blank">
-    <div class="tile-box"
-        data-title='GMail'
-        data-url='https://gmail.com'
-        data-bg-color='#ffffff'data-txt-color='#ffffff'data-img='/start/websites/gmail.png'style='background-color:#ffffff; color:#ffffff'>
-        <img class="logo" src="/start/websites/gmail.png"></img></div>
-    <div class="tile-title">GMail</div>
-</a>
-
-<a class="tile tile-link" href="https://mstdn.social" data-groups='favorite,social' target="_blank">
-    <div class="tile-box"
-        data-title='Mastadon'
-        data-url='https://mstdn.social'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Mastadon</div>
-    <div class="tile-title">Mastadon</div>
-</a>
-
-<a class="tile tile-link" href="https://tweetdeck.twitter.com" data-groups='favorite,social' target="_blank">
-    <div class="tile-box"
-        data-title='Twitter (TweetDeck)'
-        data-url='https://tweetdeck.twitter.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Twitter (TweetDeck)</div>
-    <div class="tile-title">Twitter (TweetDeck)</div>
-</a>
-
-<a class="tile tile-link" href="https://deviantart.com/" data-groups='favorite' target="_blank">
-    <div class="tile-box"
-        data-title='Deviantart'
-        data-url='https://deviantart.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Deviantart</div>
-    <div class="tile-title">Deviantart</div>
-</a>
-
-<a class="tile tile-link" href="https://reliccastle.com/" data-groups='favorite,social' target="_blank">
-    <div class="tile-box"
-        data-title='Relic Castle'
-        data-url='https://reliccastle.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Relic Castle</div>
-    <div class="tile-title">Relic Castle</div>
-</a>
-
-<a class="tile tile-link" href="https://pokecommunity.com/" data-groups='social' target="_blank">
-    <div class="tile-box"
-        data-title='PokéCommunity'
-        data-url='https://pokecommunity.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        PokéCommunity</div>
-    <div class="tile-title">PokéCommunity</div>
-</a>
-
-<a class="tile tile-link" href="https://thecrafters001.github.io" data-groups='favorite,games' target="_blank">
-    <div class="tile-box"
-        data-title='TheCrafters001'
-        data-url='https://thecrafters001.github.io'
-        data-bg-color='#004000'data-txt-color='#ffffff'data-img='/start/websites/tc001_logo_white.png'style='background-color:#004000; color:#ffffff'>
-        <img class="logo" src="/start/websites/tc001_logo_white.png"></img></div>
-    <div class="tile-title">TheCrafters001</div>
-</a>
-
-<a class="tile tile-link" href="https://stackoverflow.com" data-groups='coding' target="_blank">
-    <div class="tile-box"
-        data-title='Stack Overflow'
-        data-url='https://stackoverflow.com'
-        data-bg-color='#f48024'data-txt-color='#ffffff'style='background-color:#f48024; color:#ffffff'>
-        Stack Overflow</div>
-    <div class="tile-title">Stack Overflow</div>
-</a>
-
-<a class="tile tile-link" href="https://itch.io" data-groups='games' target="_blank">
-    <div class="tile-box"
-        data-title='Itch'
-        data-url='https://itch.io'
-        data-bg-color='#fa5c5c'data-txt-color='#ffffff'style='background-color:#fa5c5c; color:#ffffff'>
-        Itch</div>
-    <div class="tile-title">Itch</div>
-</a>
-
-<a class="tile tile-link" href="https://indiedb.com" data-groups='games' target="_blank">
-    <div class="tile-box"
-        data-title='IndieDB'
-        data-url='https://indiedb.com'
-        data-bg-color='#77C628'data-txt-color='#ffffff'style='background-color:#77C628; color:#ffffff'>
-        IndieDB</div>
-    <div class="tile-title">IndieDB</div>
-</a>
-
-<a class="tile tile-link" href="https://luka-sj.com" data-groups='games,coding,favorite' target="_blank">
-    <div class="tile-box"
-        data-title='Luka S.J.'
-        data-url='https://luka-sj.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Luka S.J.</div>
-    <div class="tile-title">Luka S.J.</div>
-</a>
-
-<a class="tile tile-link" href="https://twitch.tv" data-groups='videos,social,favorite' target="_blank">
-    <div class="tile-box"
-        data-title='Twitch'
-        data-url='https://twitch.tv'
-        data-bg-color='#9146FF'data-txt-color='#ffffff'style='background-color:#9146FF; color:#ffffff'>
-        Twitch</div>
-    <div class="tile-title">Twitch</div>
-</a>
-
-<a class="tile tile-link" href="https://thecrafters001.github.io/OpenSearch/" data-groups='search' target="_blank">
-    <div class="tile-box"
-        data-title='OpenSearch'
-        data-url='https://thecrafters001.github.io/OpenSearch/'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/openSearch.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/openSearch.png"></img></div>
-    <div class="tile-title">OpenSearch</div>
-</a>
-
-<a class="tile tile-link" href="https://thecrafters001.github.io/OpenSearch/legacy/index.html" data-groups='search' target="_blank">
-    <div class="tile-box"
-        data-title='OpenSearch (Legacy)'
-        data-url='https://thecrafters001.github.io/OpenSearch/legacy/index.html'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/openSearchLegacy.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/openSearchLegacy.png"></img></div>
-    <div class="tile-title">OpenSearch (Legacy)</div>
-</a>
-
-<a class="tile tile-link" href="https://wingless-seraph.net/en" data-groups='' target="_blank">
-    <div class="tile-box"
-        data-title='Wingless Seraph (English)'
-        data-url='https://wingless-seraph.net/en'
-        data-bg-color='#000000'data-txt-color='#ffffff'data-img='/start/websites/wingless-seraph.jpg'style='background-color:#000000; color:#ffffff'>
-        <img class="logo" src="/start/websites/wingless-seraph.jpg"></img></div>
-    <div class="tile-title">Wingless Seraph (English)</div>
-</a>
-
-<a class="tile tile-link" href="https://wingless-seraph.net/" data-groups='' target="_blank">
-    <div class="tile-box"
-        data-title='Wingless Seraph (Japanese)'
-        data-url='https://wingless-seraph.net/'
-        data-bg-color='#000000'data-txt-color='#ffffff'data-img='/start/websites/wingless-seraph-japanese.jpg'style='background-color:#000000; color:#ffffff'>
-        <img class="logo" src="/start/websites/wingless-seraph-japanese.jpg"></img></div>
-    <div class="tile-title">Wingless Seraph (Japanese)</div>
-</a>
-
-<a class="tile tile-link" href="https://visualstudio.com/" data-groups='favorite,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Visual Studio'
-        data-url='https://visualstudio.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Visual Studio</div>
-    <div class="tile-title">Visual Studio</div>
-</a>
-
-<a class="tile tile-link" href="https://code.visualstudio.com/" data-groups='favorite,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Visual Studio Code'
-        data-url='https://code.visualstudio.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Visual Studio Code</div>
-    <div class="tile-title">Visual Studio Code</div>
-</a>
-
-<a class="tile tile-link" href="https://store.steampowered.com/" data-groups='favorite,games,social,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Steam'
-        data-url='https://store.steampowered.com/'
-        data-bg-color='#00adee'data-txt-color='#ffffff'style='background-color:#00adee; color:#ffffff'>
-        Steam</div>
-    <div class="tile-title">Steam</div>
-</a>
-
-<a class="tile tile-link" href="https://steamstat.us" data-groups='favorite,games,social,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Steam Status'
-        data-url='https://steamstat.us'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Steam Status</div>
-    <div class="tile-title">Steam Status</div>
-</a>
-
-<a class="tile tile-link" href="https://steamdb.info/" data-groups='favorite,games,social,coding' target="_blank">
-    <div class="tile-box"
-        data-title='SteamDB'
-        data-url='https://steamdb.info/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        SteamDB</div>
-    <div class="tile-title">SteamDB</div>
-</a>
-
-<a class="tile tile-link" href="https://www.codeproject.com/" data-groups='favorite,social,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Code Project'
-        data-url='https://www.codeproject.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Code Project</div>
-    <div class="tile-title">Code Project</div>
-</a>
-
-<a class="tile tile-link" href="https://jrsoftware.org/isinfo.php" data-groups='favorite,coding' target="_blank">
-    <div class="tile-box"
-        data-title='Inno Setup'
-        data-url='https://jrsoftware.org/isinfo.php'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Inno Setup</div>
-    <div class="tile-title">Inno Setup</div>
-</a>
-
-<a class="tile tile-link" href="https://namecheap.com" data-groups='coding' target="_blank">
-    <div class="tile-box"
-        data-title='NameCheap'
-        data-url='https://namecheap.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        NameCheap</div>
-    <div class="tile-title">NameCheap</div>
-</a>
-
-<a class="tile tile-link" href="https://cloudflare.com" data-groups='coding' target="_blank">
-    <div class="tile-box"
-        data-title='CloudFlare'
-        data-url='https://cloudflare.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        CloudFlare</div>
-    <div class="tile-title">CloudFlare</div>
-</a>
-
-<a class="tile tile-link" href="https://nexusmods.com" data-groups='games' target="_blank">
-    <div class="tile-box"
-        data-title='Nexus Mods'
-        data-url='https://nexusmods.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/nexus.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/nexus.png"></img></div>
-    <div class="tile-title">Nexus Mods</div>
-</a>
-
-<a class="tile tile-link" href="https://forums.nexusmods.com" data-groups='games,social' target="_blank">
-    <div class="tile-box"
-        data-title='The Nexus Forums'
-        data-url='https://forums.nexusmods.com'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/nexus.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/nexus.png"></img></div>
-    <div class="tile-title">The Nexus Forums</div>
-</a>
-
-<a class="tile tile-link" href="https://forums.rpgmakerweb.com/" data-groups='social' target="_blank">
-    <div class="tile-box"
-        data-title='RPG Maker Forums'
-        data-url='https://forums.rpgmakerweb.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        RPG Maker Forums</div>
-    <div class="tile-title">RPG Maker Forums</div>
-</a>
-
-<a class="tile tile-link" href="https://pokemon.com/" data-groups='games' target="_blank">
-    <div class="tile-box"
-        data-title='Pokémon'
-        data-url='https://pokemon.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'data-img='/start/websites/pokemon.png'style='background-color:#333333; color:#ffffff'>
-        <img class="logo" src="/start/websites/pokemon.png"></img></div>
-    <div class="tile-title">Pokémon</div>
-</a>
-
-<a class="tile tile-link" href="https://tannerhelland.com/" data-groups='favorite,games' target="_blank">
-    <div class="tile-box"
-        data-title='Tanner Helland'
-        data-url='https://tannerhelland.com/'
-        data-bg-color='#333333'data-txt-color='#ffffff'style='background-color:#333333; color:#ffffff'>
-        Tanner Helland</div>
-    <div class="tile-title">Tanner Helland</div>
-</a>
-
-</div>
-
-</div>
-
+    <!-- Below are script settings -->
+    <script>
+        var cookieConsent = new CookieConsent(
+        					{
+        						privacyPolicyUrl: "/pages/policies/privacy.html",
+        						content: { // the content in all needed languages
+        							de: {
+        								title: "Cookie-Einstellungen",
+        								body: "Wir nutzen Cookies, um Inhalte zu personalisieren und die Zugriffe auf unsere Website zu analysieren. " +
+        									"Sie können wählen, ob Sie nur für die Funktion der Website notwendige Cookies akzeptieren oder auch " +
+        									"Tracking-Cookies zulassen möchten. Weitere Informationen finden Sie in unserer --privacy-policy--.",
+        								privacyPolicy: "Datenschutzerklärung",
+        								buttonAcceptAll: "Alle Cookies akzeptieren",
+        								buttonAcceptTechnical: "Nur technisch notwendige Cookies akzeptieren"
+        							},
+        							en: {
+        								title: "Cookie settings",
+        								body: "I use cookies for some functions on this website. " +
+        									"You can choose whether you only accept cookies that are necessary for the functioning of the website " +
+        									"or whether you also want to allow tracking cookies. For more information, please refer to my --privacy-policy--.",
+        								privacyPolicy: "privacy policy",
+        								buttonAcceptAll: "Accept all cookies",
+        								buttonAcceptTechnical: "Only accept technically necessary cookies"
+        							}
+        						}
+        					}
+        				)
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        			  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        			}
+    </script>
 </body>
-<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-<script src="js/slate.js"></script>
+
 </html>
